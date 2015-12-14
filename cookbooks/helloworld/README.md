@@ -52,5 +52,5 @@ Include `helloworld` in your node's `run_list`:
 
 ## License and Authors
 ### Status
-[![Build Status](https://travis-ci.org/sumeshkanayi/helloworld.svg?branch=master)](https://travis-ci.org/simkimsia/UtilityBehaviors)
+[![Build Status](https://travis-ci.org/sumeshkanayi/sumesh-cookbooks.svg?branch=master)]
 Author:: sumeshkanayi (<sumeshkanayi@gmail.com>)
