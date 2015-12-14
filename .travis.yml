@@ -23,4 +23,5 @@ script:
   - /opt/chefdk/embedded/bin/bundle exec foodcritic -f any . --exclude spec
   - /opt/chefdk/embedded/bin/bundle exec rspec ./cookbooks/helloworld/spec/helloworld.rb
   - /opt/chefdk/embedded/bin/bundle exec sudo chef-client -z -o "helloworld"
+  - /opt/chefdk/embedded/bin/bundle exec rspec ./cookbooks/helloworld/spec/sinatra.rb
   
