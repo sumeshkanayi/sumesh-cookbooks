@@ -51,7 +51,7 @@ template '/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb' do
   owner 'root'
   group 'root'
   mode '0644'
-  variables(:sinatra_port => node["sinatra"]["port"] ,:sinatra_ip => node["sinatra"]["listener"])
+  variables(:sinatra_port => node["sinatra"]["listener"] ,:sinatra_ip => node["sinatra"]["ip"])
   notifies :run, 'execute[run hello world]' ,:immediately
 end
 
