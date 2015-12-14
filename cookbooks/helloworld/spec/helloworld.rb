@@ -21,7 +21,7 @@ let(:chef_run) do
      end
 
   it 'does install sinatra gem file' do
-  	  expect(chef_run).to install_chef_gem('sinatra')
+  	  expect(chef_run).to install_gem_package('sinatra')
      end
 
   it 'does create a template file' do
