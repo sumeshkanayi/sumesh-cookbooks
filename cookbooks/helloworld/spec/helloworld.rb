@@ -26,8 +26,8 @@ let(:chef_run) do
 
   it 'does create a template file' do
   	  expect(chef_run).to create_template('/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb')
-  	  expect(chef_run).to render_file('/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb').with_content(/192.168.0.1/)
-     expect(chef_run).to render_file('/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb').with_content(/80/)
+  	  expect(chef_run).to render_file('/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb').with_content(/127.0.0.1/)
+     expect(chef_run).to render_file('/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb').with_content(/4567/)
 
      end
      
