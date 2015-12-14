@@ -21,7 +21,7 @@ let(:chef_run) do
      end
 
   it 'does install sinatra gem file' do
-  	  expect(chef_run).to install_gem_package('sinatra')
+  	  expect(chef_run).to install_chef_gem('sinatra')
      end
 
   it 'does create a template file' do
@@ -36,7 +36,7 @@ let(:chef_run) do
      end
      
 it "sinatra gem installation notifies template files to get created" do
-resource = chef_run.gem_package('sinatra')
+resource = chef_run.chef_gem('sinatra')
 expect(resource).to notify('template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]').to(:create).immediately
 end
 
