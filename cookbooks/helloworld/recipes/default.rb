@@ -19,7 +19,7 @@ end
 
 cookbook_file "#{node["helloworld"]["directory"]}/helloworld.rb" do
   action :create
-  source 'helloworld.rb'
+  source 'hello_world.rb'
   owner 'root'
   group 'root'
   mode '0644'
