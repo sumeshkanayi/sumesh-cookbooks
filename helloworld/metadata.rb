@@ -1,0 +1,7 @@
+name             'helloworld'
+maintainer       'sumeshkanayi'
+maintainer_email 'sumeshkanayi@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures helloworld app'
+long_description 'Installs/Configures helloworld'
+version          '1.0.0'
