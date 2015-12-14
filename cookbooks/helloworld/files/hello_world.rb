@@ -4,9 +4,9 @@
 #p 'Hello world'
 #end
 
-require 'sinatra'
-get '/' do
+#require 'sinatra'
+#get '/' do
 
- 'Hello world'
-end
+p  'Hello world'
+#end
 
