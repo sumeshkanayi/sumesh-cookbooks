@@ -6,8 +6,8 @@ describe 'helloworld::default' do
 let(:chef_run) do
     ChefSpec::SoloRunner.new do |node|
       node.set["helloworld"]["directory"] = '/tmp/helloworld'
-      node.set["sinatra"]["port"]="4567"
-      node.set["sinatra"]["listener"]="127.0.0.1"
+      node.set["sinatra"]["listener"]="4567"
+      node.set["sinatra"]["ip"]="127.0.0.1"
     end.converge(described_recipe)
   end
   
