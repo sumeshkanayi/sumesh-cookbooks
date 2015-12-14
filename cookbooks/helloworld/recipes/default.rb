@@ -35,10 +35,10 @@ cookbook_file "#{node["helloworld"]["directory"]}/helloworld.rb" do
   mode '0644'
  end
 
-gem_package 'sinatra' do
-action :install
-notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]' ,:immediately
-end
+#gem_package 'sinatra' do
+#action :install
+#notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]' ,:immediately
+#end
 chef_gem 'sinatra' do
 action :install
 notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]' ,:immediately
