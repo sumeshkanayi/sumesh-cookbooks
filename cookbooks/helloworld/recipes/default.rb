@@ -44,6 +44,7 @@ gem_package 'sinatra' do
 action :install
 #compile_time true
 #notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]', :immediately
+
 end
 
 
@@ -59,7 +60,7 @@ end
 
 
 execute 'run hello world' do
-  command "ruby #{node["helloworld"]["directory"]}/helloworld.rb"
+  command "/opt/chef/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
   action :run
   
 end
