@@ -7,9 +7,19 @@
 # All rights reserved - Do Not Redistribute
 #i
 
+
 hellow_wolrd_directory=node["helloworld"]["directory"]
 
 directory hellow_wolrd_directory do
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+  recursive true
+end
+
+
+directory '/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra' do
   owner 'root'
   group 'root'
   mode '0755'
@@ -46,4 +56,3 @@ execute 'run hello world' do
   action :run
 end
 
-puts "Hello world"
