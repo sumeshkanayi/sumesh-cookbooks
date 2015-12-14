@@ -4,7 +4,7 @@
 #p 'Hello world'
 #end
 
-require "sinatra"
+#require "sinatra"
 #get '/' do
 
 p 'Hello world'
