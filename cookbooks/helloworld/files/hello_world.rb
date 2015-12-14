@@ -1,5 +1,12 @@
+#require "sinatra"
+#get '/' do
+
+#p 'Hello world'
+#end
+
 require "sinatra"
-get '/' do
+#get '/' do
 
 p 'Hello world'
-end
+#end
+
