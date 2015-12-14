@@ -39,9 +39,9 @@ cookbook_file "#{node["helloworld"]["directory"]}/helloworld.rb" do
 #action :install
 #notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]' ,:immediately
 #end
-chef_gem 'sinatra' do
+gem_package 'sinatra' do
 action :install
-compile_time true
+#compile_time true
 #notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]', :immediately
 end
 
