@@ -15,6 +15,9 @@ describe package('apache2') do
   it { should be_installed }
 end
 
+describe package('sinatra') do
+  it { should be_installed.by('gem')}
+end
 
 
 end
