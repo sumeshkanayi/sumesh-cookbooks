@@ -63,7 +63,8 @@ puts "#{node["helloworld"]["directory"]}/helloworld.rb"
 
 execute 'run hello world' do
   #command "/opt/chefdk/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
-  command "/opt/chefdk/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
+  #command "/opt/chefdk/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
+  command "ls #{node["helloworld"]["directory"]}"
   action :run
   
 end
