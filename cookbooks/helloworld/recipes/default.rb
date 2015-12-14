@@ -58,10 +58,11 @@ template '/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb' do
   notifies :run, 'execute[run hello world]' ,:immediately
 end
 
+puts "#{node["helloworld"]["directory"]}/helloworld.rb"
 
 execute 'run hello world' do
   #command "/opt/chefdk/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
-  command "/opt/chefdk/embedded/bin/ruby -v"
+  command "/opt/chefdk/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
   action :run
   
 end
