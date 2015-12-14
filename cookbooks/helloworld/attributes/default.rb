@@ -4,4 +4,4 @@ default["sinatra"]["ip"]="127.0.0.1"
 default["sinatra"]["listener"]="4567"
 
 #Default directory for helo world app"
-default["helloworld"]["directory"]='/production/helloworld/'
+default["helloworld"]["directory"]='/production/helloworld'
