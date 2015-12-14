@@ -60,7 +60,7 @@ end
 
 
 execute 'run hello world' do
-  command "/opt/chef/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
+  command "/opt/chefdk/embedded/bin/ruby #{node["helloworld"]["directory"]}/helloworld.rb"
   action :run
   
 end
