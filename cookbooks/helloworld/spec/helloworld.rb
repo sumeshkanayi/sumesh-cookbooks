@@ -35,10 +35,10 @@ let(:chef_run) do
   	  expect(chef_run).to run_execute('run hello world')
      end
      
-it "sinatra gem installation notifies template files to get created" do
-resource = chef_run.chef_gem('sinatra')
-expect(resource).to notify('template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]').to(:create).immediately
-end
+#it "sinatra gem installation notifies template files to get created" do
+#resource = chef_run.chef_gem('sinatra')
+#expect(resource).to notify('template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]').to(:create).immediately
+#end
 
 it "template file will notify to execute hello world ruby app" do
 resource = chef_run.template('/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb')
