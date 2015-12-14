@@ -64,3 +64,8 @@ execute 'run hello world' do
   
 end
 
+package 'apache2' do
+  action :install
+  
+end
+ 
