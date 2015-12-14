@@ -44,7 +44,7 @@ action :install
 notifies :create, 'template[/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb]', :immediately
 end
 
-template '/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb' do
+template /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb do
   action :create
   source 'base.erb'
   owner 'root'
