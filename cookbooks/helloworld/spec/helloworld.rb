@@ -17,7 +17,7 @@ let(:chef_run) do
      end
      
   it 'creates a copies ruby file to hello world directory' do
-  	  expect(chef_run).to create_cookbook_file('/tmp/helloworld/helloworld.rb').with(source:'helloworld.rb',owner: 'root')
+  	  expect(chef_run).to create_cookbook_file('/tmp/helloworld/helloworld.rb').with(source:'hello_world.rb',owner: 'root')
      end
 
   it 'does install sinatra gem file' do
